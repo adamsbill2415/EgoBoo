@@ -1,7 +1,7 @@
-name: egoboo # you probably want to 'snapcraft register <name>'
+name: ego-boo # you probably want to 'snapcraft register <name>'
 base: core22 # the base snap is the execution environment for this snap
 version: '1.0.0' # just for humans, typically '1.2+git' or '1.3.2'
-title: EgoBoo 
+title: EgoBoo
 summary: Conquer the Cryptic Dungeons of Adventure. # 79 char long summary
 description: |
   Forge alliances with fellow adventurers or brave the dungeons alone, mastering tactical combat and strategic thinking to overcome challenges. 
@@ -11,8 +11,8 @@ grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 
 apps:
-  egoboo:
-    command: bin/egoboo-bin
+  ego-boo:
+    command: bin/ego-boo-bin
     extensions: [gnome]
     plugs:
       - network
@@ -24,8 +24,8 @@ layout:
     bind: $SNAP/gnome-platform/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/webkit2gtk-4.0
 
 parts:
-  egoboo:
+  ego-boo:
     plugin: dump
     source: .
     organize:
-      egoboo-bin: bin/
+      ego-boo-bin: bin/
