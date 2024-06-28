@@ -1,0 +1,17 @@
+How to compile Egoboo on Mac OS X
+
+Step 1:
+
+You will need:
+- Mac OS X 10.7 (Lion) or later
+- Xcode 4.6 (only been tested with Xcode 6)
+
+Step 2:
+
+Open the "osx" folder inside the Egoboo source directory, then open "Egoboo.xcodeproj".
+
+Step 3:
+
+Make sure the active scheme is set to "Egoboo (release)" (Project->Scheme->Egoboo (release)), and click "Run".
+
+Get more help at: http://egoboo.sourceforge.net/forum/
